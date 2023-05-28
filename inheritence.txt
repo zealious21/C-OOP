@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+class Shape{
+   
+    public:
+    float area;
+};
+class rectangle : public Shape{
+    public:
+    
+    void rectarea(int l,int w)
+    {
+        area=l*w;
+        cout<<"area of rectangle is "<<area<<endl;
+    }
+};
+class circle :public Shape{
+ public:
+ 
+ void circarea(int r){
+     area=3.142*(r*r);
+     cout<<"area of crcle is "<<area<<endl;
+ }
+};
+class triangle :public Shape{
+public:
+ 
+void trianglearea(int b, int h)
+{
+    area=0.5*b*h;
+    cout<<"area of triangle is "<<area<<endl;
+    
+}
+};
+
+int main(){
+rectangle r;
+
+r.rectarea(5,5);
+circle c;
+c.circarea(5);
+triangle t;
+t.trianglearea(5,5);
+
+return 0;
+}

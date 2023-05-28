@@ -1,0 +1,64 @@
+#include <iostream>
+using namespace std;
+
+class Student{
+int rollno;
+string name, department;
+
+public:
+void setdetails(int Rollno,string Name,string Department)
+{
+name=Name;
+rollno=Rollno;
+department=Department;
+}
+void getdetails()
+{
+cout<<"The student "<<name<<" ,Rollno "<<rollno<<" belongs to "<<department<<endl;
+}
+};
+
+int main(){
+Student s1;
+s1.setdetails(23,"fayz","Computer System Engineering");
+s1.getdetails();
+return 0;
+}
+
+=============================================
+#include <iostream>
+using namespace std;
+
+class Employee{
+    int id,salary;      
+    string name;
+    public:
+    void setdetails(int Salary,int ID,string Name)
+    {
+    id=ID;
+    salary=Salary;
+    name=Name;
+    }
+    void getname()
+    {
+        cout<<name<<endl;
+    }
+    void getid()
+    {
+        cout<<id<<endl;
+    }
+    void getsalary()
+    {
+        cout<<salary<<endl;
+    }
+
+};
+
+int main(){
+Employee e1;
+e1.setdetails(70000,104,"Ahmed");
+e1.getname();
+e1.getid();
+e1.getsalary();
+return 0;
+}
